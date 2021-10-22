@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "deploy": "echo \"Mock build & deploy script for package mobile\" && exit 0"
+    "git:version": "git add ./package.json && git commit -m'chore(mobile): atualiza versao' && git push -u origin",
+    "minor": "yarn version --minor --no-git-tag-version && yarn git:version",
+    "patch": "yarn version --patch --no-git-tag-version && yarn git:version"
   },
   "dependencies": {
     "react": "16.13.1",
