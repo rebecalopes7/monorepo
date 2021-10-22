@@ -4,7 +4,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "commits": "git rev-list --no-merges --count HEAD ^beta"
   },
   "workspaces": {
     "packages": [
