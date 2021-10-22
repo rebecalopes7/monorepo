@@ -5,8 +5,8 @@
   "license": "MIT",
   "scripts": {
     "git:version": "git add ./package.json && git commit -m'chore(eslint-config): atualiza versao' && git push -u origin",
-    "minor": "yarn config set version-git-message 'chore(eslint):atualiza versao' && yarn version --minor",
-    "patch": "yarn config set version-git-message 'chore(eslint):atualiza versao' && yarn version --patch"
+    "minor": "echo \"Atualiza versão para pacote eslint-config\" && yarn version --minor",
+    "patch": "echo \"Atualiza versão para pacote eslint-config\" && yarn version --patch"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.0",

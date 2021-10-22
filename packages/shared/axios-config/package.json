@@ -1,12 +1,12 @@
 {
   "name": "@monorepo/axios-config",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
     "git:version": "git add ./package.json && git commit -m'chore(axios-config): atualiza versao' && git push -u origin",
-    "minor": "yarn config set version-git-message 'chore(axios-config):atualiza versao' && yarn version --minor",
-    "patch": "yarn config set version-git-message 'chore(axios-config):atualiza versao' && yarn version --patch"
+    "minor": "echo \"Atualiza versão para pacote axios-config\" && yarn version --minor",
+    "patch": "echo \"Atualiza versão para pacote axios-config\" && yarn version --patch"
   },
   "dependencies": {
     "axios": "^0.21.0"
