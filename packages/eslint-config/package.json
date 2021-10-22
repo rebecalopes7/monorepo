@@ -1,12 +1,12 @@
 {
   "name": "@monorepo/eslint-config",
-  "version": "1.3.2",
+  "version": "1.5.0",
   "main": ".eslintrc.js",
   "license": "MIT",
   "scripts": {
     "git:version": "git add ./package.json && git commit -m'chore(eslint-config): atualiza versao' && git push -u origin",
-    "minor": "yarn version --minor --no-git-tag-version && yarn git:version",
-    "patch": "yarn version --patch --no-git-tag-version && yarn git:version"
+    "minor": "echo \"Atualiza versão para pacote eslint-config\" && yarn version --minor",
+    "patch": "echo \"Atualiza versão para pacote eslint-config\" && yarn version --patch"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^3.7.0",

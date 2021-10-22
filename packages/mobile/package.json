@@ -1,6 +1,6 @@
 {
   "name": "@monorepo/mobile",
-  "version": "0.3.1",
+  "version": "0.6.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -8,17 +8,17 @@
     "start": "react-native start",
     "test": "jest",
     "git:version": "git add ./package.json && git commit -m'chore(mobile): atualiza versao' && git push -u origin",
-    "minor": "yarn version --minor --no-git-tag-version && yarn git:version",
-    "patch": "yarn version --patch --no-git-tag-version && yarn git:version"
+    "minor": "echo \"Atualiza versão para pacote mobile\" && yarn version --minor",
+    "patch": "echo \"Atualiza versão para pacote mobile\" && yarn version --patch"
   },
   "dependencies": {
     "react": "16.13.1",
     "react-native": "0.63.3"
   },
   "devDependencies": {
-    "@monorepo/eslint-config": "1.3.1",
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
+    "@monorepo/eslint-config": "1.3.1",
     "@types/jest": "^25.2.3",
     "@types/react-native": "^0.63.2",
     "@types/react-test-renderer": "^16.9.2",
