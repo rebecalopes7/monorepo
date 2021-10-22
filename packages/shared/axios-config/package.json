@@ -3,6 +3,9 @@
   "version": "1.1.0",
   "main": "index.ts",
   "license": "MIT",
+  "scripts": {
+    "deploy": "echo \"Mock build & deploy script for package axios-config\" && exit 0"
+  },
   "dependencies": {
     "axios": "^0.21.0"
   }

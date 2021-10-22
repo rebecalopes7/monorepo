@@ -6,7 +6,8 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "echo \"Mock build & deploy script for package mobile\" && exit 0"
   },
   "dependencies": {
     "react": "16.13.1",
