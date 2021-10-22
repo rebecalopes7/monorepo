@@ -8,8 +8,8 @@
     "start": "react-native start",
     "test": "jest",
     "git:version": "git add ./package.json && git commit -m'chore(mobile): atualiza versao' && git push -u origin",
-    "minor": "echo \"Atualiza versão para pacote mobile\" && yarn version --minor",
-    "patch": "echo \"Atualiza versão para pacote mobile\" && yarn version --patch"
+    "minor": "echo \"Atualiza versão para pacote mobile\" && yarn version --minor && git push -u origin",
+    "patch": "echo \"Atualiza versão para pacote mobile\" && yarn version --patch && git push -u origin"
   },
   "dependencies": {
     "react": "16.13.1",
