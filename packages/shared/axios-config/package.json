@@ -1,6 +1,6 @@
 {
   "name": "@monorepo/axios-config",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "main": "index.ts",
   "license": "MIT",
   "scripts": {
