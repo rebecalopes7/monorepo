@@ -1,12 +1,12 @@
 {
   "name": "@monorepo/server",
-  "version": "1.7.0",
+  "version": "1.7.4",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "git:version": "git add ./package.json && git commit -m'chore(server): atualiza versao' && git push -u origin",
-    "minor": "echo \"Atualiza versão para pacote server\" && yarn version --minor && git push -u origin",
-    "patch": "echo \"Atualiza versão para pacote server\" && yarn version --patch && git push -u origin"
+    "minor": "echo \"Atualiza versão para pacote server\" && yarn version --minor --no-git-tag-version",
+    "patch": "echo \"Atualiza versão para pacote server\" && yarn version --patch --no-git-tag-version"
   },
   "dependencies": {
     "cors": "^2.8.5",

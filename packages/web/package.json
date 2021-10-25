@@ -1,13 +1,13 @@
 {
   "name": "@monorepo/web",
-  "version": "1.6.0",
+  "version": "1.6.4",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "git:version": "git add ./package.json && git commit -m'chore(web): atualiza versao' && git push -u origin",
-    "minor": "echo \"Atualiza versão para pacote web\" && yarn version --minor && git push -u origin",
-    "patch": "echo \"Atualiza versão para pacote web\" && yarn version --patch && git push -u origin"
+    "minor": "echo \"Atualiza versão para pacote web\" && yarn version --minor --no-git-tag-version",
+    "patch": "echo \"Atualiza versão para pacote web\" && yarn version --patch --no-git-tag-version"
   },
   "dependencies": {
     "react": "^17.0.1",
