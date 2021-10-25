@@ -7,7 +7,7 @@ routes.get('/', (request, response) => {
 })
 
 routes.post('/posts', (request, response) => {
-  return response.json({ message: 'New post' })
+  return response.json({ message: 'New post ' })
 })
 
 export default routes
